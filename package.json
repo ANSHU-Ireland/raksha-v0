@@ -1,0 +1,12 @@
+{
+  "name": "raksha-ireland",
+  "version": "1.0.0",
+  "description": "Emergency SOS app for immigrants in Ireland",
+  "scripts": {
+    "build": "echo 'Using pre-built Flutter web files' && echo 'Build already completed'",
+    "start": "echo 'Static files ready for serving'"
+  },
+  "keywords": ["flutter", "emergency", "sos", "ireland", "safety"],
+  "author": "ANSHU-Ireland",
+  "license": "MIT"
+}

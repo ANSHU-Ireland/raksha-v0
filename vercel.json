@@ -3,7 +3,7 @@
   "name": "raksha-ireland",
   "builds": [
     {
-      "src": "pubspec.yaml",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build/web"
