@@ -79,16 +79,79 @@ class _DemoAuthScreenState extends State<DemoAuthScreen> {
                     SizedBox(height: 8.h),
                     Text(
                       _isLogin 
-                          ? 'Sign in to your account'
-                          : 'Create account for safety',
+                        ? 'Sign in to access emergency services'
+                        : 'Your safety is our priority',
                       style: TextStyle(
                         fontSize: 16.sp,
                         color: Colors.grey[600],
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    
+                    // AREIVA Sponsorship Section
+                    SizedBox(height: 32.h),
+                    Container(
+                      padding: EdgeInsets.all(16.w),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[50],
+                        borderRadius: BorderRadius.circular(12.r),
+                        border: Border.all(color: Colors.grey[200]!),
+                      ),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Proudly Sponsored By',
+                            style: TextStyle(
+                              fontSize: 12.sp,
+                              color: Colors.grey[600],
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(height: 12.h),
+                          // AREIVA Logo Placeholder
+                          Container(
+                            width: 120.w,
+                            height: 40.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8.r),
+                              border: Border.all(color: Colors.grey[300]!),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.05),
+                                  blurRadius: 4,
+                                  offset: const Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                            child: Center(
+                              child: Text(
+                                'AREIVA',
+                                style: TextStyle(
+                                  fontSize: 18.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: const Color(0xFF2E5BFF),
+                                  letterSpacing: 1.2,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 8.h),
+                          Text(
+                            'Supporting immigrant safety in Ireland',
+                            style: TextStyle(
+                              fontSize: 10.sp,
+                              color: Colors.grey[500],
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
+              
               SizedBox(height: 48.h),
 
               // Demo Instructions
